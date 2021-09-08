@@ -1,13 +1,10 @@
-import org.apache.flink.api.java.DataSet;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
-public class HelloFlink {
+public class HelloFlinkDataSet {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment environment = StreamExecutionEnvironment.getExecutionEnvironment();
 
