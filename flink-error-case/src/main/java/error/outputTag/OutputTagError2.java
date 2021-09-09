@@ -48,6 +48,7 @@ public class OutputTagError2 {
                 System.out.println(stringObjectMap.get("date"));
                 Object object = stringObjectMap.get("date");
 
+                ZonedDateTime zonedDateTime = (ZonedDateTime) object;
                 /*
                 error case: 虽然是这里转型错误，但是错误信息会抛出在 context.output(OutputTag, record) 里面进行抛出, 不一定会指向这行代码；
                 异常信息只会反映在 output(OutputTag, record) 中；
